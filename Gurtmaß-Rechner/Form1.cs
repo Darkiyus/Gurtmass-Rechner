@@ -72,24 +72,29 @@ namespace Gurtmaß_Rechner
                 double gurtmass = length + (2 * width) + (2 * height);
                 gurtmassresult.Text = gurtmass.ToString();
 
-                if(gurtmass < DHLNationalMax && length < DHLMaxLength)
+                if(gurtmass <= DHLNationalMax && length <= DHLMaxLength)
                 {
                     checkedListBox1.SetItemCheckState(0, CheckState.Checked);
                 }
-                if (gurtmass < DHLInternationalMax && length < DHLMaxLength)
+                if (gurtmass <= DHLInternationalMax && length <= DHLMaxLength)
                 {
                     checkedListBox1.SetItemCheckState(1, CheckState.Checked);
                 }
-                if (gurtmass < GLSMax && length < GLSMaxLength && width < GLSMaxWidth && height < GLSMaxHeight)
+                if (gurtmass <= GLSMax && length <= GLSMaxLength && width <= GLSMaxWidth && height <= GLSMaxHeight)
                 {
                     checkedListBox1.SetItemCheckState(2, CheckState.Checked);
                 }
-                if (gurtmass < DPDMax && length < DPDMaxLength)
+                if (gurtmass <= DPDMax && length <= DPDMaxLength)
                 {
                     checkedListBox1.SetItemCheckState(3, CheckState.Checked);
                 }
 
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

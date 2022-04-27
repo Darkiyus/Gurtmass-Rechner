@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.Label label4;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.LaengeInput = new System.Windows.Forms.TextBox();
             this.BreiteInput = new System.Windows.Forms.TextBox();
             this.HeightInput = new System.Windows.Forms.TextBox();
@@ -40,8 +41,22 @@
             this.gurtmassresult = new System.Windows.Forms.TextBox();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new System.Drawing.Font("Bahnschrift", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label4.Location = new System.Drawing.Point(241, 40);
+            label4.Name = "label4";
+            label4.Size = new System.Drawing.Size(303, 42);
+            label4.TabIndex = 6;
+            label4.Text = "Gurtmaß-Rechner";
             // 
             // LaengeInput
             // 
@@ -92,16 +107,6 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Höhe";
             // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new System.Drawing.Font("Bahnschrift", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label4.Location = new System.Drawing.Point(241, 40);
-            label4.Name = "label4";
-            label4.Size = new System.Drawing.Size(303, 42);
-            label4.TabIndex = 6;
-            label4.Text = "Gurtmaß-Rechner";
-            // 
             // rechnenButton
             // 
             this.rechnenButton.Location = new System.Drawing.Point(469, 206);
@@ -150,11 +155,51 @@
             this.label6.TabIndex = 11;
             this.label6.Text = "Kann versendet werden mit:";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(550, 116);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(21, 13);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "cm";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(550, 142);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(21, 13);
+            this.label8.TabIndex = 13;
+            this.label8.Text = "cm";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(550, 168);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(21, 13);
+            this.label9.TabIndex = 14;
+            this.label9.Text = "cm";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(550, 310);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(21, 13);
+            this.label10.TabIndex = 15;
+            this.label10.Text = "cm";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.label5);
@@ -167,8 +212,11 @@
             this.Controls.Add(this.HeightInput);
             this.Controls.Add(this.BreiteInput);
             this.Controls.Add(this.LaengeInput);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Gurtmaß-Rechner";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -187,6 +235,10 @@
         private System.Windows.Forms.TextBox gurtmassresult;
         private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
     }
 }
 
